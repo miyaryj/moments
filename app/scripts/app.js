@@ -8,11 +8,11 @@ angular.module('momentsApp', [
 ])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+      .when('/start', {
+        templateUrl: 'views/start.html',
+        controller: 'StartCtrl'
       })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/start'
       });
   });
